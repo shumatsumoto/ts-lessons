@@ -17,6 +17,10 @@ let nameobj: NAME = {
   last: null,
 };
 
+const func1 = (x: number, y: number): number => {
+  return x + y;
+};
+
 function App() {
   return (
     <div className="App">
