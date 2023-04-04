@@ -2,6 +2,21 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+const name = "hello";
+let aaa = "hello";
+
+let array = ["あああ", 2, true];
+
+interface NAME {
+  first: string;
+  last: string | null;
+}
+
+let nameobj: NAME = {
+  first: "shu",
+  last: null,
+};
+
 function App() {
   return (
     <div className="App">
