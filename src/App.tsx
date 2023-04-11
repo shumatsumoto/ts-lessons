@@ -21,6 +21,25 @@ const func1 = (x: number, y: number): number => {
   return x + y;
 };
 
+type PROFILE = {
+  age: number;
+  city: string;
+}
+
+type LOGIN = {
+  name: string;
+  password: string;
+}
+
+type USER = PROFILE & LOGIN;
+
+const userA: USER = {
+  age: 30,
+  city: "tokyo",
+  name: "xxx",
+  password: "xxxxx",
+}
+
 function App() {
   return (
     <div className="App">
