@@ -46,6 +46,12 @@ value = 222;
 let arrayUnion: (number | string)[];
 arrayUnion = [0, 2, "aaa"];
 
+let company: "Facebook" | "Google" | "Amazon";
+company = "Amazon";
+
+let memory: 256 | 333;
+memory = 256;
+
 function App() {
   return (
     <div className="App">
