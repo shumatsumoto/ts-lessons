@@ -24,12 +24,12 @@ const func1 = (x: number, y: number): number => {
 type PROFILE = {
   age: number;
   city: string;
-}
+};
 
 type LOGIN = {
   name: string;
   password: string;
-}
+};
 
 type USER = PROFILE & LOGIN;
 
@@ -38,7 +38,13 @@ const userA: USER = {
   city: "tokyo",
   name: "xxx",
   password: "xxxxx",
-}
+};
+
+let value: boolean | number;
+value = 222;
+
+let arrayUnion: (number | string)[];
+arrayUnion = [0, 2, "aaa"];
 
 function App() {
   return (
