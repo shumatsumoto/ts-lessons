@@ -60,6 +60,21 @@ let animal = { cat: "small cat" };
 let newAnimal: typeof animal;
 newAnimal = { cat: "hello" };
 
+type KEYS = {
+  primary: string;
+  secondary: string;
+};
+let key: keyof KEYS;
+key = "primary";
+
+const SPORTS = {
+  soccer: "Soccer",
+  baseball: "Baseball",
+};
+
+let keySports: keyof typeof SPORTS;
+keySports = "soccer";
+
 function App() {
   return (
     <div className="App">
