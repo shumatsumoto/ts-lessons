@@ -75,6 +75,27 @@ const SPORTS = {
 let keySports: keyof typeof SPORTS;
 keySports = "soccer";
 
+enum OS {
+  windows,
+  mac,
+  linux,
+}
+
+interface PC {
+  id: number;
+  OSType: OS;
+}
+
+const PC1: PC = {
+  id: 1,
+  OSType: OS.mac,
+};
+
+const PC2: PC = {
+  id: 2,
+  OSType: OS.linux,
+};
+
 function App() {
   return (
     <div className="App">
