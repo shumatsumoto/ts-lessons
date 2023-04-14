@@ -122,6 +122,23 @@ function funcGen<T>(props: T) {
 
 const genFunc = funcGen<string>("222");
 
+interface Props {
+  price: number;
+}
+
+function funcGen3<T extends Props>(props: T) {
+  return {
+    value: props.price,
+  };
+}
+const gen3 = funcGen3({ price: 2 });
+
+const funcGen4 = <T extends Props>(props: T) => {
+  return {
+    value: props.price,
+  };
+};
+
 function App() {
   return (
     <div className="App">
