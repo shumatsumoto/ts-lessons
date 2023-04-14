@@ -114,6 +114,14 @@ const gen1: GEN<number> = {
   item: 222,
 };
 
+function funcGen<T>(props: T) {
+  return {
+    item: props,
+  };
+}
+
+const genFunc = funcGen<string>("222");
+
 function App() {
   return (
     <div className="App">
