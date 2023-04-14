@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import TestComponent from "./TestComponent";
 
 const name = "hello";
 let aaa = "hello";
@@ -139,10 +140,12 @@ const funcGen4 = <T extends Props>(props: T) => {
   };
 };
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header className="App-header">
+        <TestComponent text="hello" />
+      </header>
     </div>
   );
 }
