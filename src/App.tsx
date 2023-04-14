@@ -104,6 +104,16 @@ let comp3: string = "test";
 let funcComp1 = (x: number) => {};
 let funcComp2 = (x: string) => {};
 
+interface GEN<T extends string | number> {
+  item: T;
+}
+const gen0: GEN<string> = {
+  item: "hello",
+};
+const gen1: GEN<number> = {
+  item: 222,
+};
+
 function App() {
   return (
     <div className="App">
