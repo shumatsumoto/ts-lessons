@@ -96,6 +96,14 @@ const PC2: PC = {
   OSType: OS.linux,
 };
 
+const comp1 = "test";
+let comp2: string = comp1;
+
+let comp3: string = "test";
+
+let funcComp1 = (x: number) => {};
+let funcComp2 = (x: string) => {};
+
 function App() {
   return (
     <div className="App">
